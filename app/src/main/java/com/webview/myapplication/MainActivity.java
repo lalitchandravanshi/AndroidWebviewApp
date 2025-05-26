@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
         });
 
         if (isNetworkAvailable()) {
-            mWebView.loadUrl("https://github.com/bishwassagar");
+            mWebView.loadUrl("https://sites.google.com/view/7thbn");
         } else {
             mWebView.loadUrl("file:///android_asset/offline.html");
         }
@@ -59,7 +59,7 @@ public class MainActivity extends Activity {
             public void onAvailable(Network network) {
                 runOnUiThread(() -> {
                     if (!mWebView.getUrl().startsWith("file:///android_asset")) {
-                        mWebView.loadUrl("https://github.com/bishwassagar");
+                        mWebView.loadUrl("https://sites.google.com/view/7thbn");
                     }
                 });
             }
